@@ -16,7 +16,7 @@ const replaceVal = (tempVal, orgVal) => {
 // creating a server
 const server = http.createServer((req, res) => {
     if (req.url == "/") {
-        requests("https://api.openweathermap.org/data/2.5/weather?q=Bilaspur&appid=1bd8e5987196d897110c4a1ebce27032")
+        requests("Enter Your Own API Link")
             .on("data", (chunk) => {
                 const objData = JSON.parse(chunk);
                 const arrData = [objData]
